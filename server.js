@@ -32,8 +32,8 @@ var options = {
 //    }); 
 // });
 
-app.get('/:location', function(req, res) {
-  res.send("long is set to " + req.params.location);
+app.get('/', function(req, res) {
+  res.send("long is set to " + 'req.params.location');
 });
 
 // app.get('/:location', function(req, res){
