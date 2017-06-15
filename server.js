@@ -32,20 +32,20 @@ var options = {
 //    }); 
 // });
 
-// app.get('/api/:location', function(req, res) {
-//   res.send("long is set to " + req.params.location);
-// });
-
-app.get('/:location', function(req, res){
-  console.log(req.params.location) 
-  request('https://api.yelp.com/v3/businesses/search?categories=restaurants&' + req.params.location, options, 
-  function (error, response, body) { 
-    if (!error && response.statusCode === 200) { 
-      console.log(body); 
-      res.send(body); 
-    } 
-   }); 
+app.get('/:location', function(req, res) {
+  res.send("long is set to " + req.params.location);
 });
+
+// app.get('/:location', function(req, res){
+//   console.log(req.params.location) 
+//   request('https://api.yelp.com/v3/businesses/search?categories=restaurants&' + req.params.location, options, 
+//   function (error, response, body) { 
+//     if (!error && response.statusCode === 200) { 
+//       console.log(body); 
+//       res.send(body); 
+//     } 
+//    }); 
+// });
 
 
 //app.listen(3000);
