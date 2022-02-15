@@ -16,7 +16,7 @@ app.use(myParser.urlencoded({ extended: true }));
 var options = {
  // url: 'http://api.yelp.com/v3/businesses/search?categories=restaurants&latitude=37.786882&longitude=-122.399972',
   headers: {
-    'Authorization': 'bearer RT2S0q88HosnKEJrds-Lbe5EhebLejgURB7JzQeK7lC_qNI_PCQL4XuR5yE7YfIcdX_GfDf9H7kwI44cyRf855v71v67Gpkue-ZjgoQTBJyDtL_7YJKxHPUsRkk4WXYx'
+    'Authorization': 'bearer TOKEN here'
   }
 };
 
